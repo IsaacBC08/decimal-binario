@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binario a Hexadecimal</title>
+  <script src="../js/converciones.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/bah.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navegar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">10-3 A</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cambiar bases
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./dab.html">Decimal a Binario</a></li>
+              <li><a class="dropdown-item" href="./bad.html">Binario a Decimal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./hab.html">Hexadecimal a Binario</a></li>
+              <li><a class="dropdown-item" href="./bah.html">Binario a Hexadecimal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./oab.html">Octal a binario</a></li>
+              <li><a class="dropdown-item" href="./bao.html">Binario a Octal</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h2 id="titulo">Binarios a Hexadecimales</h2>
+  <h3 id="binario-text">Binario:</h3>
+  <div id="div-hexadecimal">
+    <input placeholder="101001" id="entrada" />
+  </div>
+  <h3 id="titulo">Resultado en Hexadecimal:</h3>
+  <h4 id="salida"></h4>
+  <button onclick="binario_a_hexadecimal()" id="convertir" class="btn btn-secondary centrado">convertir</button>
+  <script>
+    // Obtener referencia al input
+    var input = document.getElementById('entrada');
+
+    // Agregar un event listener para el evento 'input'
+    input.addEventListener('input', function(event) {
+        var valor = event.target.value;
+        var mensajeError = document.getElementById('salida');
+
+        // Validar que el valor ingresado contenga solo '0' y '1'
+        if (!/^[01]*$/.test(valor) || valor.includes('e')) {
+            mensajeError.textContent = 'Solo se permiten los caracteres 0 y 1.';
+            // Si la entrada no es válida, eliminar el último caracter ingresado
+            event.target.value = valor.slice(0, -1);
+        } else {
+            mensajeError.textContent = '';
+        }
+    });
+</script>
+
+</body>
+
+</html>

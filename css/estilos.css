@@ -1,0 +1,40 @@
+.navegar{
+    background-color: #B0805B !important;
+}
+body{
+    background-color: #B79E81 !important;
+}
+input{
+    background-color: #F2D1B3 !important;
+    font-family: serif;
+    color: black;
+    border: none;
+    border-radius: 12px;
+}
+
+::placeholder{
+    color: rgb(60, 60, 60);
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.entrada{
+    width: 60vw;
+    height: 10vh;
+    margin-left: 20vw;
+}
+.convertir{
+    width: 30vw;
+    margin-left: 35vw;
+    height: 5vw;
+}
