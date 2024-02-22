@@ -35,12 +35,13 @@ function binario_a_decimal(binario) {
 
 
 function sumar(){
-    var binario1 = document.getElementById('binario1') 
-    var binario2 = document.getElementById('binario2')
+    var binario1 = document.getElementById('binario1').value
+    var binario2 = document.getElementById('binario2').value
     //Recibimos los binarios a sumar 
     
     var conversion_a_decimal1 = binario_a_decimal(binario1)
     var conversion_a_decimal2 = binario_a_decimal(binario2)
+
     //convertimos los dos binarios a decimales
     try{
         var resultado_decimal = conversion_a_decimal1 + conversion_a_decimal2
@@ -63,12 +64,13 @@ function sumar(){
 }
 
 function restar(){
-    var binario1 = document.getElementById('binario1') 
-    var binario2 = document.getElementById('binario2')
+    var binario1 = document.getElementById('binario1').value
+    var binario2 = document.getElementById('binario2').value
     //Recibimos los binarios a sumar 
     
     var conversion_a_decimal1 = binario_a_decimal(binario1)
     var conversion_a_decimal2 = binario_a_decimal(binario2)
+
     //convertimos los dos binarios a decimales
 
     var resultado_decimal = conversion_a_decimal1 - conversion_a_decimal2
@@ -79,16 +81,22 @@ function restar(){
 
     var resultado_binario = decimal_a_binario(resultado_decimal_entero)
     //Convetimos el resultado en binario
-
-
     var lienzo = document.getElementById('lienzo')
-    lienzo.innerText = resultado_binario
 
+    if(resultado_binario === ""){
+        lienzo.innerText = "0"
+        console.log(resultado_binario)
+    }
+
+    else{
+        lienzo.innerText = resultado_binario
+        console.log(resultado_binario)
+    }
 }
 
 function multiplicar(){
-    var binario1 = document.getElementById('binario1') 
-    var binario2 = document.getElementById('binario2')
+    var binario1 = document.getElementById('binario1').value 
+    var binario2 = document.getElementById('binario2').value
     //Recibimos los binarios a sumar 
     
     var conversion_a_decimal1 = binario_a_decimal(binario1)
@@ -110,8 +118,8 @@ function multiplicar(){
 
 }
 function dividir(){
-    var binario1 = document.getElementById('binario1') 
-    var binario2 = document.getElementById('binario2')
+    var binario1 = document.getElementById('binario1').value
+    var binario2 = document.getElementById('binario2').value
     //Recibimos los binarios a sumar 
     
     var conversion_a_decimal1 = binario_a_decimal(binario1)
@@ -127,8 +135,13 @@ function dividir(){
     var resultado_binario = decimal_a_binario(resultado_decimal_entero)
     //Convetimos el resultado en binario
 
+    if(resultado_binario === ""){
+        lienzo.innerText = "Operación invalida"
+        console.log(resultado_binario)
+    }
 
-    var lienzo = document.getElementById('lienzo')
-    lienzo.innerText = resultado_binario
-
+    else{
+        lienzo.innerText = resultado_binario
+        console.log(resultado_binario)
+    }
 }

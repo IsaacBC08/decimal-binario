@@ -38,3 +38,25 @@ h1{
     margin-left: 35vw;
     height: 5vw;
 }
+.espacio-arriba{
+    padding-top: 4vh;
+}
+.centrar{
+    width: 30vw;
+    margin-left: 35vw;
+    height: 5vw;
+    margin-top: 20px;
+}
+.espacio{
+    padding: 20px;
+    margin: 4px;
+    
+}
+@media screen and (max-width: 767px){
+    #centrar{
+        width: 40vw;
+        margin-left: 30vw;
+        height: 15vw;
+
+    }
+}

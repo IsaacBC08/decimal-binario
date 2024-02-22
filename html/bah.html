@@ -12,7 +12,8 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/bah.css">
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 
 <body>
@@ -45,8 +46,10 @@
               </li>
               <li><a class="dropdown-item" href="./oab.html">Octal a binario</a></li>
               <li><a class="dropdown-item" href="./bao.html">Binario a Octal</a></li>
-
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aritmetica.html">Operaciones Binarias</a>
           </li>
         </ul>
       </div>
@@ -66,20 +69,20 @@
     var input = document.getElementById('entrada');
 
     // Agregar un event listener para el evento 'input'
-    input.addEventListener('input', function(event) {
-        var valor = event.target.value;
-        var mensajeError = document.getElementById('salida');
+    input.addEventListener('input', function (event) {
+      var valor = event.target.value;
+      var mensajeError = document.getElementById('salida');
 
-        // Validar que el valor ingresado contenga solo '0' y '1'
-        if (!/^[01]*$/.test(valor) || valor.includes('e')) {
-            mensajeError.textContent = 'Solo se permiten los caracteres 0 y 1.';
-            // Si la entrada no es válida, eliminar el último caracter ingresado
-            event.target.value = valor.slice(0, -1);
-        } else {
-            mensajeError.textContent = '';
-        }
+      // Validar que el valor ingresado contenga solo '0' y '1'
+      if (!/^[01]*$/.test(valor) || valor.includes('e')) {
+        mensajeError.textContent = 'Solo se permiten los caracteres 0 y 1.';
+        // Si la entrada no es válida, eliminar el último caracter ingresado
+        event.target.value = valor.slice(0, -1);
+      } else {
+        mensajeError.textContent = '';
+      }
     });
-</script>
+  </script>
 
 </body>
 

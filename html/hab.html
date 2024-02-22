@@ -12,7 +12,8 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/hab.css">
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 
 <body>
@@ -45,8 +46,10 @@
               </li>
               <li><a class="dropdown-item" href="./oab.html">Octal a binario</a></li>
               <li><a class="dropdown-item" href="./bao.html">Binario a Octal</a></li>
-
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aritmetica.html">Operaciones Binarias</a>
           </li>
         </ul>
       </div>
@@ -59,27 +62,28 @@
   </div>
   <h3 id="titulo">Resultado en binario:</h3>
   <h4 id="salida"></h4>
-  <button onclick="hexadecimal_a_binario()" id="convertir" class="btn btn-secondary" class="btn btn-secondary">convertir</button>
-  
+  <button onclick="hexadecimal_a_binario()" id="convertir" class="btn btn-secondary"
+    class="btn btn-secondary">convertir</button>
+
   <script>
     // Obtener referencia al input
     var input = document.getElementById('entrada')
 
     // Agregar un event listener para el evento 'input'
-    input.addEventListener('input', function(event) {
-        var valor = event.target.value
-        var mensajeError = document.getElementById('salida')
+    input.addEventListener('input', function (event) {
+      var valor = event.target.value
+      var mensajeError = document.getElementById('salida')
 
-        // Validar que el valor ingresado contenga solo caracteres válidos
-        if (!/^[0-9a-fA-F]*$/.test(valor)) {
-            mensajeError.textContent = 'Solo se permiten los caracteres del 0 al 9 y las letras de la a a la f (mayúsculas o minúsculas).';
-            // Si la entrada no es válida, eliminar el último caracter ingresado
-            event.target.value = valor.slice(0, -1)
-        } else {
-            mensajeError.textContent = ''
-        }
+      // Validar que el valor ingresado contenga solo caracteres válidos
+      if (!/^[0-9a-fA-F]*$/.test(valor)) {
+        mensajeError.textContent = 'Solo se permiten los caracteres del 0 al 9 y las letras de la a a la f (mayúsculas o minúsculas).';
+        // Si la entrada no es válida, eliminar el último caracter ingresado
+        event.target.value = valor.slice(0, -1)
+      } else {
+        mensajeError.textContent = ''
+      }
     })
-</script>
+  </script>
 </body>
 
 </html>
