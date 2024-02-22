@@ -10,11 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/oab.css">
   <link rel="stylesheet" href="../css/estilos.css">
-
   <script src="../js/converciones.js"></script>
-
 </head>
 
 <body>
@@ -56,15 +53,14 @@
       </div>
     </div>
   </nav>
-  <h2 id="titulo">Octales a binarios</h2>
-  <h3 id="octal-text">Octal:</h3>
+  <h2 id="titulo" class="centrar-texto">Octales a binarios</h2>
+  <h3 id="octal-text" class="centrar-texto">Octal:</h3>
   <div id="div-octal">
-    <input placeholder="1 4 7 0 " id="entrada" />
+    <input placeholder="1 4 7 0 " id="entrada" class="entrada"/>
   </div>
-  <h3 id="titulo">Resultado en binario:</h3>
-  <h4 id="salida"></h4>
-  <button onclick="octal_a_binario()" id="convertir" class="btn btn-secondary"
-    class="btn btn-secondary">convertir</button>
+  <h3 id="titulo" class="centrar-texto">Resultado en binario:</h3>
+  <h4 id="salida" class="centrar-texto"></h4>
+  <button onclick="octal_a_binario()" id="convertir" class="btn btn-secondary centrar">convertir</button>
   <script>
     // Obtener referencia al input
     var input = document.getElementById('entrada');

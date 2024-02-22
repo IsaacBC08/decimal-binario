@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/bah.css">
+  <link rel="stylesheet" href="../css/baha.css">
   <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
@@ -56,14 +56,14 @@
     </div>
   </nav>
 
-  <h2 id="titulo">Binarios a Hexadecimales</h2>
-  <h3 id="binario-text">Binario:</h3>
+  <h2 id="titulo" class="centrar-texto">Binarios a Hexadecimales</h2>
+  <h3 id="binario-text" class="centrar-texto">Binario:</h3>
   <div id="div-hexadecimal">
-    <input placeholder="101001" id="entrada" />
+    <input placeholder="101001" id="entrada" class="entrada"/>
   </div>
-  <h3 id="titulo">Resultado en Hexadecimal:</h3>
-  <h4 id="salida"></h4>
-  <button onclick="binario_a_hexadecimal()" id="convertir" class="btn btn-secondary centrado">convertir</button>
+  <h3 id="titulo" class="centrar-texto">Resultado en Hexadecimal:</h3>
+  <h4 id="salida" class="centrar-texto"></h4>
+  <button onclick="binario_a_hexadecimal()" id="convertir" class="btn btn-secondary centrar">convertir</button>
   <script>
     // Obtener referencia al input
     var input = document.getElementById('entrada');
