@@ -1,11 +1,31 @@
+footer{
+    background-color: #2a2a2a;
+
+}
+
+.white{
+    background-color: #ffffff !important;
+    border-radius: 12px;
+    border-color: #fff !important;
+}
+.navbar-brand, .nav-link{
+    color: #fff !important;
+
+}
+.nav-link:hover{
+    color: #7f7f7e !important;
+}
 .navegar{
-    background-color: #B0805B !important;
+    background-color:  #202082 !important;
+    color: #fff !important;
 }
 body{
-    background-color: #B79E81 !important;
+    background-color:#7b7b7b !important;
+    color: #fff;
+    
 }
 input{
-    background-color: #F2D1B3 !important;
+    background-color: #7698A6!important;
     font-family: serif;
     color: black;
     border: none;
