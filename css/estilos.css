@@ -71,11 +71,15 @@ h1{
     margin: 4px;
     
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 700px){
     .centrar{
         width: 50vw;
         margin-left: 25vw;
         height: 15vw;
 
+    }
+    .mini-tb{
+        max-width: 10vw !important;
+        margin: 0;
     }
 }
