@@ -1,121 +1,96 @@
-/* General */
-body {
-    background-color: #121212; /* Fondo oscuro para el cuerpo */
-    color: #e0e0e0; /* Texto claro para buen contraste */
-    font-family: 'Arial', sans-serif; /* Fuente moderna y legible */
-    margin: 0;
-    padding: 0;
-}
-
-/* Footer */
 footer {
-    background-color: #1f1f1f; /* Fondo más oscuro para el pie de página */
-    color: #e0e0e0; /* Texto claro */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar el texto */
+    background-color: #004d40; /* Verde oscuro */
 }
 
-/* Estilos de los elementos blancos */
 .white {
-    background-color: #333333; /* Fondo oscuro */
+    background-color: #ffffff !important;
     border-radius: 12px;
-    border: 1px solid #444; /* Borde oscuro */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil para profundidad */
+    border-color: #ffffff !important;
 }
 
-/* Barra de navegación */
 .navbar-brand, .nav-link {
-    color: #e0e0e0 !important; /* Blanco para texto de navegación */
-    font-weight: bold; /* Negrita para visibilidad */
+    color: #ffffff !important; /* Blanco */
 }
 
 .nav-link:hover {
-    color: #b0b0b0 !important; /* Color gris claro al pasar el ratón */
+    color: #004d40 !important; /* Verde oscuro */
 }
 
-/* Botón de navegación */
 .navegar {
-    background-color: #303f9f; /* Azul oscuro para el botón */
-    color: #e0e0e0; /* Texto claro */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    text-align: center;
-    display: inline-block; /* Alinea el botón con el texto */
-    text-decoration: none; /* Quita el subrayado */
+    background-color: #00796b !important; /* Verde medio */
+    color: #ffffff !important; /* Blanco */
 }
 
-.navegar:hover {
-    background-color: #1e2a78; /* Azul más oscuro al pasar el ratón */
+body {
+    background-color: #e0f2f1 !important; /* Verde claro */
+    color: #263238; /* Gris oscuro */
 }
 
-/* Estilos de input */
 input {
-    background-color: #424242; /* Fondo oscuro para los inputs */
-    color: #e0e0e0; /* Texto claro */
-    border: 1px solid #555; /* Borde oscuro */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    background-color: #ffffff !important; /* Blanco */
+    font-family: serif;
+    color: #263238; /* Gris oscuro */
+    border: 1px solid #00796b; /* Verde medio */
+    border-radius: 12px;
 }
 
 ::placeholder {
-    color: #888; /* Color del texto del placeholder */
-    text-align: center; /* Centra el texto del placeholder */
+    color: #00796b; /* Verde medio */
+    text-align: center;
 }
 
-/* Encabezados */
 h1 {
     text-align: center;
-    font-size: 2.5em; /* Tamaño grande */
-    color: #e0e0e0; /* Color claro */
-    margin: 20px 0; /* Espaciado superior e inferior */
+    color: #263238; /* Gris oscuro */
 }
 
-/* Títulos */
+.centrar-texto {
+    text-align: center;
+}
+
 .titulo {
     text-align: center;
-    font-size: 2em; /* Tamaño ligeramente menor que h1 */
-    color: #e0e0e0; /* Color claro */
-    margin: 20px 0; /* Espaciado superior e inferior */
-}
-
-/* Estilos de entradas */
-.entrada, .convertir {
-    margin: 20px auto; /* Centrado automático */
-    display: block; /* Asegura que se muestre en bloque */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: #263238; /* Gris oscuro */
 }
 
 .entrada {
     width: 60vw;
     height: 10vh;
+    margin-left: 20vw;
 }
 
 .convertir {
     width: 30vw;
-    height: 5vh;
+    margin-left: 35vw;
+    height: 5vw;
 }
 
-/* Espaciado */
 .espacio-arriba {
-    padding-top: 20px; /* Espaciado superior */
+    padding-top: 4vh;
 }
 
 .centrar {
     width: 30vw;
-    height: 5vh;
-    margin: 20px auto; /* Centrado automático */
+    margin-left: 35vw;
+    height: 5vw;
+    margin-top: 20px;
 }
 
-/* Ajustes para pantallas pequeñas */
+.espacio {
+    margin: 4px;
+}
+
 @media screen and (max-width: 700px) {
     .centrar {
-        width: 80vw; /* Ancho más grande en pantallas pequeñas */
+        width: 50vw;
+        margin-left: 25vw;
         height: 15vw;
     }
 
     .mini-tb {
-        max-width: 80vw !important; /* Ancho más grande para pantallas pequeñas */
-        margin: 0 auto; /* Centrado automático */
+        max-width: 10vw !important;
+        margin: 0;
     }
 }
