@@ -1,106 +1,113 @@
 /* General */
 body {
-    background-color: #f4f4f4; /* Color de fondo más claro */
-    color: #333; /* Texto más oscuro para mejor contraste */
-    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    background-color: #f0f0f0; /* Fondo más claro y neutro */
+    color: #333; /* Texto oscuro para buen contraste */
+    font-family: 'Arial', sans-serif; /* Fuente moderna y legible */
     margin: 0;
     padding: 0;
 }
 
+/* Footer */
 footer {
-    background-color: #2a2a2a; /* Color oscuro para el pie de página */
-    color: #fff; /* Texto blanco en el pie de página */
-    padding: 20px; /* Espaciado para el contenido del pie de página */
-    text-align: center; /* Centra el texto en el pie de página */
+    background-color: #2a2a2a; /* Fondo oscuro para el pie de página */
+    color: #fff; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
 }
 
+/* Estilos de los elementos blancos */
 .white {
     background-color: #ffffff;
     border-radius: 12px;
-    border: 1px solid #ddd; /* Añadido borde sutil */
+    border: 1px solid #ddd; /* Borde sutil */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
 }
 
+/* Barra de navegación */
 .navbar-brand, .nav-link {
-    color: #fff !important; /* Texto blanco en la barra de navegación */
-    font-weight: bold; /* Negrita para mejor visibilidad */
+    color: #fff !important; /* Blanco para texto de navegación */
+    font-weight: bold; /* Negrita para visibilidad */
 }
 
 .nav-link:hover {
-    color: #f0f0f0 !important; /* Color más claro al pasar el ratón */
+    color: #dcdcdc !important; /* Color gris claro al pasar el ratón */
 }
 
+/* Botón de navegación */
 .navegar {
     background-color: #202082;
     color: #fff;
-    border-radius: 8px; /* Bordes redondeados para el botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
     text-align: center;
+    display: inline-block; /* Alinea el botón con el texto */
+    text-decoration: none; /* Quita el subrayado */
 }
 
+/* Estilos de input */
 input {
-    background-color: #e0e0e0; /* Color más claro para el fondo de los inputs */
-    font-family: 'Arial', sans-serif; /* Fuente más moderna */
-    color: #333; /* Texto oscuro para mejor contraste */
-    border: 1px solid #ccc; /* Borde sutil en los inputs */
-    border-radius: 8px; /* Bordes redondeados en los inputs */
-    padding: 10px; /* Espaciado interno en los inputs */
+    background-color: #e0e0e0; /* Fondo más claro */
+    color: #333; /* Texto oscuro */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
 }
 
 ::placeholder {
     color: #888; /* Color del texto del placeholder */
-    text-align: center;
+    text-align: center; /* Centra el texto del placeholder */
 }
 
+/* Encabezados */
 h1 {
     text-align: center;
-    font-size: 2.5em; /* Tamaño de fuente más grande */
-    color: #202082; /* Color azul para los encabezados */
+    font-size: 2em; /* Tamaño grande */
+    color: #202082; /* Color azul */
     margin: 20px 0; /* Espaciado superior e inferior */
 }
 
-.centrar-texto {
-    text-align: center;
-}
-
+/* Títulos */
 .titulo {
     text-align: center;
+    font-size: 1.8em; /* Tamaño ligeramente menor que h1 */
+    color: #202082; /* Color azul */
     margin: 20px 0; /* Espaciado superior e inferior */
-    font-size: 2em; /* Tamaño de fuente más grande para los títulos */
-    color: #202082; /* Color azul para los títulos */
+}
+
+/* Estilos de entradas */
+.entrada, .convertir {
+    margin: 20px auto; /* Centrado automático */
+    display: block; /* Asegura que se muestre en bloque */
 }
 
 .entrada {
     width: 60vw;
     height: 10vh;
-    margin: 20px auto; /* Centrado automático con margen superior e inferior */
 }
 
 .convertir {
     width: 30vw;
-    margin: 20px auto; /* Centrado automático con margen superior e inferior */
     height: 5vh;
 }
 
+/* Espaciado */
 .espacio-arriba {
-    padding-top: 20px; /* Espaciado superior aumentado */
+    padding-top: 20px; /* Espaciado superior */
 }
 
 .centrar {
     width: 30vw;
-    margin: 20px auto; /* Centrado automático con margen superior e inferior */
     height: 5vh;
+    margin: 20px auto; /* Centrado automático */
 }
 
-.espacio {
-    margin: 10px; /* Espaciado aumentado */
-}
-
-/* Estilos para pantallas pequeñas */
+/* Ajustes para pantallas pequeñas */
 @media screen and (max-width: 700px) {
     .centrar {
-        width: 80vw; /* Ancho más grande para pantallas pequeñas */
+        width: 80vw; /* Ancho más grande en pantallas pequeñas */
         height: 15vw;
-        margin: 20px auto; /* Centrado automático */
     }
 
     .mini-tb {
