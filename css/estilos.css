@@ -1,86 +1,110 @@
-footer{
-    background-color: #2a2a2a;
-
+/* General */
+body {
+    background-color: #f4f4f4; /* Color de fondo más claro */
+    color: #333; /* Texto más oscuro para mejor contraste */
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    margin: 0;
+    padding: 0;
 }
 
-.white{
-    background-color: #ffffff !important;
+footer {
+    background-color: #2a2a2a; /* Color oscuro para el pie de página */
+    color: #fff; /* Texto blanco en el pie de página */
+    padding: 20px; /* Espaciado para el contenido del pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+}
+
+.white {
+    background-color: #ffffff;
     border-radius: 12px;
-    border-color: #fff !important;
+    border: 1px solid #ddd; /* Añadido borde sutil */
 }
-.navbar-brand, .nav-link{
-    color: #fff !important;
 
+.navbar-brand, .nav-link {
+    color: #fff !important; /* Texto blanco en la barra de navegación */
+    font-weight: bold; /* Negrita para mejor visibilidad */
 }
-.nav-link:hover{
-    color: #7f7f7e !important;
+
+.nav-link:hover {
+    color: #f0f0f0 !important; /* Color más claro al pasar el ratón */
 }
-.navegar{
-    background-color:  #202082 !important;
-    color: #fff !important;
-}
-body{
-    background-color:#7b7b7b !important;
+
+.navegar {
+    background-color: #202082;
     color: #fff;
-    
-}
-input{
-    background-color: #7698A6!important;
-    font-family: serif;
-    color: black;
-    border: none;
-    border-radius: 12px;
-}
-
-::placeholder{
-    color: rgb(60, 60, 60);
-    text-align: center;
-}
-h1{
+    border-radius: 8px; /* Bordes redondeados para el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
     text-align: center;
 }
 
-.centrar-texto{
+input {
+    background-color: #e0e0e0; /* Color más claro para el fondo de los inputs */
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    color: #333; /* Texto oscuro para mejor contraste */
+    border: 1px solid #ccc; /* Borde sutil en los inputs */
+    border-radius: 8px; /* Bordes redondeados en los inputs */
+    padding: 10px; /* Espaciado interno en los inputs */
+}
+
+::placeholder {
+    color: #888; /* Color del texto del placeholder */
     text-align: center;
 }
-.titulo{
+
+h1 {
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    color: #202082; /* Color azul para los encabezados */
+    margin: 20px 0; /* Espaciado superior e inferior */
 }
-.entrada{
+
+.centrar-texto {
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    margin: 20px 0; /* Espaciado superior e inferior */
+    font-size: 2em; /* Tamaño de fuente más grande para los títulos */
+    color: #202082; /* Color azul para los títulos */
+}
+
+.entrada {
     width: 60vw;
     height: 10vh;
-    margin-left: 20vw;
-}
-.convertir{
-    width: 30vw;
-    margin-left: 35vw;
-    height: 5vw;
-}
-.espacio-arriba{
-    padding-top: 4vh;
-}
-.centrar{
-    width: 30vw;
-    margin-left: 35vw;
-    height: 5vw;
-    margin-top: 20px;
-}
-.espacio{
-    margin: 4px;
-    
+    margin: 20px auto; /* Centrado automático con margen superior e inferior */
 }
 
-@media screen and (max-width: 700px){
-    .centrar{
-        width: 50vw;
-        margin-left: 25vw;
+.convertir {
+    width: 30vw;
+    margin: 20px auto; /* Centrado automático con margen superior e inferior */
+    height: 5vh;
+}
+
+.espacio-arriba {
+    padding-top: 20px; /* Espaciado superior aumentado */
+}
+
+.centrar {
+    width: 30vw;
+    margin: 20px auto; /* Centrado automático con margen superior e inferior */
+    height: 5vh;
+}
+
+.espacio {
+    margin: 10px; /* Espaciado aumentado */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 700px) {
+    .centrar {
+        width: 80vw; /* Ancho más grande para pantallas pequeñas */
         height: 15vw;
-
+        margin: 20px auto; /* Centrado automático */
     }
-    .mini-tb{
-        max-width: 10vw !important;
-        margin: 0;
+
+    .mini-tb {
+        max-width: 80vw !important; /* Ancho más grande para pantallas pequeñas */
+        margin: 0 auto; /* Centrado automático */
     }
 }
